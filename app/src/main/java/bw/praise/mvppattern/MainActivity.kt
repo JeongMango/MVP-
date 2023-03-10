@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.core.view.isVisible
 import bw.praise.mvppattern.`interface`.MainContract
 
+//https://kimyunseok.tistory.com/150
 class MainActivity : AppCompatActivity(), MainContract.View {
 
     private val textView: TextView by lazy {

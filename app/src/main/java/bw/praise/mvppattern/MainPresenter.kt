@@ -2,14 +2,14 @@ package bw.praise.mvppattern
 
 import bw.praise.mvppattern.`interface`.MainContract
 
-class MainPresenter (
+class MainPresenter(
     val mainRepository: MainRepository,
     val mainContractView: MainContract.View
-        ) : MainContract.Presenter{
+) : MainContract.Presenter {
 
-            init {
-                mainContractView.presenter = this
-            }
+    init {
+        mainContractView.presenter = this
+    }
 
     override fun start() {
         mainContractView.showProgress(false)
