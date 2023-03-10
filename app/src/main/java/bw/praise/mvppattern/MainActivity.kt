@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         textView.text = str
     }
 
+
     override lateinit var presenter: MainContract.Presenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
